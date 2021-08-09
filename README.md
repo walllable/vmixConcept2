@@ -1,5 +1,6 @@
 # vmixConcept2
  An example VMix project file, mainly built around loops. This might be used in Instagib someday, I dunno.  
+ FL Studio Project File requires FL Studio 20.8 [build 2115] or newer. To open it, don't unzip it, just open the .zip file with FL Studio.  
  BPM: 120.1  
  This features:
  * A looping TB-303 bassline, who's loop was exported with no effects, so that effects (such as distortion, delay and reverb) could be added here instead.
