@@ -1,6 +1,6 @@
 # vmixConcept2
  An example VMix project file, mainly built around loops. This might be used in Instagib someday, I dunno.  
- BPM: 120.1 (At the moment)  
+ BPM: 120.1  
  This features:
  * A looping TB-303 bassline, who's loop was exported with no effects, so that effects (such as distortion, delay and reverb) could be added here instead.
     * Has a high and low octave, whose volume can be controlled separately (pre-distortion of course)
