@@ -98,7 +98,7 @@
 				0, 3, 3, 0,
 				0, 0, 0, 0,
 				1, 8, 0, 0,
-				1, 0, 6, 0,
+				2, 0, 6, 0,
 				0, 14,
 			]
 			m_EditorNodes = 
@@ -147,7 +147,7 @@
 					name = "audio.Output1"
 					friendlyname = "audio.Output1"
 					type = "audio.Output"
-					editor_pos = [ 3520.0, 152.0 ]
+					editor_pos = [ 4072.0, 176.0 ]
 					editor_size = [ 140.0, 120.0 ]
 					properties = 
 					{
@@ -348,7 +348,7 @@
 					name = "audio.Mix6"
 					friendlyname = "Final Mixer"
 					type = "audio.Mix"
-					editor_pos = [ 2275.0, -29.0 ]
+					editor_pos = [ 2827.0, -5.0 ]
 					editor_size = [ 140.0, 300.0 ]
 					properties = 
 					{
@@ -423,7 +423,7 @@
 					name = "audio.Dynamics1"
 					friendlyname = "Final Compressor"
 					type = "audio.Dynamics"
-					editor_pos = [ 2584.0, 48.0 ]
+					editor_pos = [ 3136.0, 72.0 ]
 					editor_size = [ 184.0, 135.0 ]
 					properties = 
 					{
@@ -1157,7 +1157,7 @@
 								m_filterType = "FILTER_HIGH_SHELF"
 								m_flFrequency = 9534.703125
 								m_flQ = 3.0
-								m_fldbGain = -2.413044
+								m_fldbGain = -1.434782
 								m_bEnable = true
 							},
 						]
@@ -1167,7 +1167,7 @@
 					name = "audio.Amp8"
 					friendlyname = "audio.Amp8"
 					type = "audio.Amp"
-					editor_pos = [ 3504.0, -24.0 ]
+					editor_pos = [ 4056.0, 0.0 ]
 					editor_size = [ 140.0, 90.0 ]
 					properties = 
 					{
@@ -1181,7 +1181,7 @@
 					name = "control.Input11"
 					friendlyname = "Final Volume"
 					type = "control.Input"
-					editor_pos = [ 3128.0, -16.0 ]
+					editor_pos = [ 3680.0, 8.0 ]
 					editor_size = [ 140.0, 70.0 ]
 					properties = 
 					{
@@ -1190,7 +1190,7 @@
 						m_name = "Final Volume"
 						m_flDefaultValue = -40.0
 						m_flMinRange = -80.0
-						m_flMaxRange = -12.0
+						m_flMaxRange = -16.0
 						m_bUseDecibels = true
 					}
 				},
@@ -1198,7 +1198,7 @@
 					name = "control.Curve1"
 					friendlyname = "control.Curve1"
 					type = "control.Curve"
-					editor_pos = [ 3328.0, -24.0 ]
+					editor_pos = [ 3880.0, 0.0 ]
 					editor_size = [ 140.0, 85.0 ]
 					properties = 
 					{
@@ -1292,7 +1292,7 @@
 					friendlyname = "Effects"
 					type = "sys.Group"
 					editor_pos = [ 896.0, -640.0 ]
-					editor_size = [ 1104.0, 480.0 ]
+					editor_size = [ 1216.0, 480.0 ]
 					properties = 
 					{
 						_class = "CMixGroupBox"
@@ -1396,7 +1396,7 @@
 					name = "sys.Group12"
 					friendlyname = "Master Output"
 					type = "sys.Group"
-					editor_pos = [ 2139.0, -277.0 ]
+					editor_pos = [ 2691.0, -253.0 ]
 					editor_size = [ 1560.0, 584.0 ]
 					properties = 
 					{
@@ -1411,7 +1411,7 @@
 					name = "sys.Group13"
 					friendlyname = "Final Mixer"
 					type = "sys.Group"
-					editor_pos = [ 2155.0, -149.0 ]
+					editor_pos = [ 2707.0, -125.0 ]
 					editor_size = [ 392.0, 432.0 ]
 					properties = 
 					{
@@ -1426,7 +1426,7 @@
 					name = "sys.Group14"
 					friendlyname = "Final Volume and Curve"
 					type = "sys.Group"
-					editor_pos = [ 3112.0, -184.0 ]
+					editor_pos = [ 3664.0, -160.0 ]
 					editor_size = [ 568.0, 260.0 ]
 					properties = 
 					{
@@ -1441,7 +1441,7 @@
 					name = "audio.EQ86"
 					friendlyname = "audio.EQ86"
 					type = "audio.EQ8"
-					editor_pos = [ 2856.0, 112.0 ]
+					editor_pos = [ 3408.0, 136.0 ]
 					editor_size = [ 186.0, 120.0 ]
 					properties = 
 					{
@@ -1511,21 +1511,27 @@
 					}
 				},
 				{
-					name = "audio.Filter1"
-					friendlyname = "audio.Filter1"
-					type = "audio.Filter"
-					editor_pos = [ 3344.0, 152.0 ]
+					name = "audio.Delay2"
+					friendlyname = "Transient Prevention Delay"
+					type = "audio.Delay"
+					editor_pos = [ 1960.0, -424.0 ]
 					editor_size = [ 140.0, 135.0 ]
 					properties = 
 					{
-						_class = "CMixFilter"
+						_class = "CMixDelay"
 						m_Comment = ""
-						m_name = "audio.Filter1"
-						m_filterType = "FILTER_LOWPASS"
+						m_name = "Transient Prevention Delay"
 						m_nChannels = -1
-						m_flFrequency = 93.940697
-						m_flQ = 0.79
-						m_fldbGain = -1.96
+						m_flDelay = 19.0
+						m_fldbDirectGain = -80.0
+						m_fldbDelayGain = 0.0
+						m_fldbFeedbackGain = -60.0
+						m_flWidth = 0.0
+						m_bEnableFilter = false
+						m_filterType = "FILTER_LOWPASS"
+						m_flFrequency = 2000.0
+						m_flQ = 0.707
+						m_fldbGain = 0.0
 					}
 				},
 			]
@@ -1584,7 +1590,7 @@
 					plug1 = "audio.Mix5/volume2"
 				},
 				{
-					plug0 = "audio.Processor2/audio:Out"
+					plug0 = "audio.Delay2/audio:Out"
 					plug1 = "audio.Mix6/audio:In1"
 				},
 				{
@@ -1724,11 +1730,11 @@
 					plug1 = "control.Curve1/valueIn"
 				},
 				{
-					plug0 = "audio.Amp8/audio:Out"
-					plug1 = "audio.Filter1/audio:In"
+					plug0 = "audio.Processor2/audio:Out"
+					plug1 = "audio.Delay2/audio:In"
 				},
 				{
-					plug0 = "audio.Filter1/audio:Out"
+					plug0 = "audio.Amp8/audio:Out"
 					plug1 = "audio.Output1/audio:In1"
 				},
 			]
@@ -1737,16 +1743,16 @@
 				XAxis = 
 				{
 					pos = 0.0
-					min = -77305.0
-					max = 73063.0
-					scale = 0.758413
+					min = -120533.0
+					max = 115399.0
+					scale = 1.185276
 				}
 				YAxis = 
 				{
 					pos = 0.0
-					min = -75567.0
-					max = 75506.0
-					scale = 0.758413
+					min = -117879.0
+					max = 118597.0
+					scale = 1.185276
 				}
 			}
 			m_Submixes = 
@@ -2049,7 +2055,7 @@
 							{
 								m_nFilterType = "FILTER_HIGH_SHELF"
 								m_bEnabled = true
-								m_fldbGain = -2.413044
+								m_fldbGain = -1.434782
 								m_flCutoffFreq = 9534.703125
 								m_flQ = 3.0
 							},
@@ -2088,6 +2094,31 @@
 					m_bAffectsGlobals = false
 					m_nChannels = -1
 					m_flxfade = 0.1
+				},
+				{
+					m_name = "Transient Prevention Delay"
+					m_effectName = ""
+					m_nProcessorType = "VPROCESSOR_DELAY"
+					m_bAffectsGlobals = false
+					m_nChannels = -1
+					m_flxfade = 0.1
+					m_params = 
+					{
+						m_feedbackFilter = 
+						{
+							m_nFilterType = "FILTER_LOWPASS"
+							m_bEnabled = true
+							m_fldbGain = 0.0
+							m_flCutoffFreq = 2000.0
+							m_flQ = 0.707
+						}
+						m_bEnableFilter = false
+						m_flDelay = 19.0
+						m_flDirectGain = -80.0
+						m_flDelayGain = 0.0
+						m_flFeedbackGain = -60.0
+						m_flWidth = 0.0
+					}
 				},
 				{
 					m_name = "audio.EQ82"
@@ -2248,22 +2279,6 @@
 						m_flAttackTimeMS = 56.688354
 						m_flReleaseTimeMS = 302.207764
 						m_flRMSTimeMS = 172.727234
-					}
-				},
-				{
-					m_name = "audio.Filter1"
-					m_effectName = ""
-					m_nProcessorType = "VPROCESSOR_FILTER"
-					m_bAffectsGlobals = false
-					m_nChannels = -1
-					m_flxfade = 0.1
-					m_params = 
-					{
-						m_nFilterType = "FILTER_LOWPASS"
-						m_bEnabled = true
-						m_fldbGain = -1.96
-						m_flCutoffFreq = 93.940697
-						m_flQ = 0.79
 					}
 				},
 			]
@@ -2863,26 +2878,6 @@
 					inputValue1 = -1
 				},
 				{
-					command = "control.store"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 16
-					inputValue1 = 4
-				},
-				{
-					command = "control.store"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 17
-					inputValue1 = 5
-				},
-				{
 					command = "submix.process"
 					paramName = 1858892542
 					outputSubmix = 1
@@ -2903,84 +2898,24 @@
 					inputValue1 = -1
 				},
 				{
-					command = "control.copy"
+					command = "control.store"
 					paramName = 0
 					outputSubmix = -1
 					inputSubmix0 = -1
 					inputSubmix1 = -1
 					processor = -1
-					inputValue0 = 18
-					inputValue1 = 16
+					inputValue0 = 16
+					inputValue1 = 4
 				},
 				{
-					command = "control.copy"
+					command = "control.store"
 					paramName = 0
 					outputSubmix = -1
 					inputSubmix0 = -1
 					inputSubmix1 = -1
 					processor = -1
-					inputValue0 = 27
-					inputValue1 = 18
-				},
-				{
-					command = "control.remap_sine"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 18
-					inputValue1 = 19
-				},
-				{
-					command = "control.remap_sine"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 27
-					inputValue1 = 23
-				},
-				{
-					command = "control.copy"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 28
-					inputValue1 = 17
-				},
-				{
-					command = "control.copy"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 37
-					inputValue1 = 28
-				},
-				{
-					command = "control.remap_sine"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 28
-					inputValue1 = 29
-				},
-				{
-					command = "control.remap_sine"
-					paramName = 0
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = 37
-					inputValue1 = 33
+					inputValue0 = 17
+					inputValue1 = 5
 				},
 				{
 					command = "submix.spectrum"
@@ -3029,8 +2964,138 @@
 					inputSubmix0 = -1
 					inputSubmix1 = -1
 					processor = -1
-					inputValue0 = 38
+					inputValue0 = 18
 					inputValue1 = 6
+				},
+				{
+					command = "control.copy"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 19
+					inputValue1 = 16
+				},
+				{
+					command = "control.copy"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 28
+					inputValue1 = 19
+				},
+				{
+					command = "control.remap_sine"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 19
+					inputValue1 = 20
+				},
+				{
+					command = "control.remap_sine"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 28
+					inputValue1 = 24
+				},
+				{
+					command = "control.copy"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 29
+					inputValue1 = 17
+				},
+				{
+					command = "control.copy"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 38
+					inputValue1 = 29
+				},
+				{
+					command = "control.remap_sine"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 29
+					inputValue1 = 30
+				},
+				{
+					command = "control.remap_sine"
+					paramName = 0
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = 38
+					inputValue1 = 34
+				},
+				{
+					command = "processor.setparameter"
+					paramName = 638290
+					outputSubmix = -1
+					inputSubmix0 = -1
+					inputSubmix1 = -1
+					processor = 5
+					inputValue0 = 18
+					inputValue1 = -1
+				},
+				{
+					command = "submix.spectrum"
+					paramName = 133539784
+					outputSubmix = -1
+					inputSubmix0 = 1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = -1
+					inputValue1 = -1
+				},
+				{
+					command = "submix.process"
+					paramName = 1926169737
+					outputSubmix = 1
+					inputSubmix0 = 1
+					inputSubmix1 = -1
+					processor = 5
+					inputValue0 = -1
+					inputValue1 = -1
+				},
+				{
+					command = "submix.debug"
+					paramName = 1963407755
+					outputSubmix = -1
+					inputSubmix0 = 1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = -1
+					inputValue1 = -1
+				},
+				{
+					command = "submix.spectrum"
+					paramName = 1314697023
+					outputSubmix = -1
+					inputSubmix0 = 1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = -1
+					inputValue1 = -1
 				},
 				{
 					command = "submix.copy"
@@ -3039,7 +3104,7 @@
 					inputSubmix0 = 5
 					inputSubmix1 = -1
 					processor = -1
-					inputValue0 = 27
+					inputValue0 = 28
 					inputValue1 = -1
 				},
 				{
@@ -3049,7 +3114,7 @@
 					inputSubmix0 = 6
 					inputSubmix1 = -1
 					processor = -1
-					inputValue0 = 18
+					inputValue0 = 19
 					inputValue1 = -1
 				},
 				{
@@ -3089,7 +3154,7 @@
 					inputSubmix0 = 7
 					inputSubmix1 = -1
 					processor = -1
-					inputValue0 = 37
+					inputValue0 = 38
 					inputValue1 = -1
 				},
 				{
@@ -3099,7 +3164,7 @@
 					inputSubmix0 = 8
 					inputSubmix1 = -1
 					processor = -1
-					inputValue0 = 28
+					inputValue0 = 29
 					inputValue1 = -1
 				},
 				{
@@ -3133,48 +3198,18 @@
 					inputValue1 = 8
 				},
 				{
-					command = "processor.setparameter"
-					paramName = 638290
-					outputSubmix = -1
-					inputSubmix0 = -1
-					inputSubmix1 = -1
-					processor = 5
-					inputValue0 = 38
-					inputValue1 = -1
-				},
-				{
-					command = "submix.spectrum"
-					paramName = 133539784
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
 					command = "submix.process"
-					paramName = 1926169737
+					paramName = 371589562
 					outputSubmix = 1
 					inputSubmix0 = 1
 					inputSubmix1 = -1
-					processor = 5
+					processor = 6
 					inputValue0 = -1
 					inputValue1 = -1
 				},
 				{
 					command = "submix.debug"
-					paramName = 1963407755
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
-					command = "submix.spectrum"
-					paramName = 1314697023
+					paramName = -794858452
 					outputSubmix = -1
 					inputSubmix0 = 1
 					inputSubmix1 = -1
@@ -3243,18 +3278,38 @@
 					inputValue1 = -1
 				},
 				{
+					command = "submix.spectrum"
+					paramName = -908935856
+					outputSubmix = -1
+					inputSubmix0 = 1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = -1
+					inputValue1 = -1
+				},
+				{
 					command = "submix.process"
-					paramName = 371589562
+					paramName = -1589861925
 					outputSubmix = 1
 					inputSubmix0 = 1
 					inputSubmix1 = -1
-					processor = 6
+					processor = 7
 					inputValue0 = -1
 					inputValue1 = -1
 				},
 				{
 					command = "submix.debug"
-					paramName = -794858452
+					paramName = 178171613
+					outputSubmix = -1
+					inputSubmix0 = 1
+					inputSubmix1 = -1
+					processor = -1
+					inputValue0 = -1
+					inputValue1 = -1
+				},
+				{
+					command = "submix.spectrum"
+					paramName = 1314157157
 					outputSubmix = -1
 					inputSubmix0 = 1
 					inputSubmix1 = -1
@@ -3278,7 +3333,7 @@
 					outputSubmix = 5
 					inputSubmix0 = 5
 					inputSubmix1 = -1
-					processor = 7
+					processor = 8
 					inputValue0 = -1
 					inputValue1 = -1
 				},
@@ -3318,7 +3373,7 @@
 					outputSubmix = 7
 					inputSubmix0 = 7
 					inputSubmix1 = -1
-					processor = 8
+					processor = 9
 					inputValue0 = -1
 					inputValue1 = -1
 				},
@@ -3408,7 +3463,7 @@
 					outputSubmix = 1
 					inputSubmix0 = 1
 					inputSubmix1 = -1
-					processor = 9
+					processor = 10
 					inputValue0 = -1
 					inputValue1 = -1
 				},
@@ -3473,46 +3528,6 @@
 					inputValue1 = -1
 				},
 				{
-					command = "submix.spectrum"
-					paramName = -1790879076
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
-					command = "submix.process"
-					paramName = 1548827451
-					outputSubmix = 1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = 10
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
-					command = "submix.debug"
-					paramName = 732448223
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
-					command = "submix.spectrum"
-					paramName = 732448223
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
 					command = "submix.output"
 					paramName = 0
 					outputSubmix = -1
@@ -3540,11 +3555,11 @@
 				1.0, 0.0, 0.0, 0.0,
 				1.0, 0.0, 0.600828, 1.0,
 				0.0, 0.0, 0.0, 0.0,
-				1.0, 0.0, 1.0, 0.0,
-				1.0, 1.0, 0.0, 0.0,
-				0.0, 0.0, 1.0, 0.0,
-				1.0, 0.0, 1.0, 1.0,
-				0.0, 0.0, 0.0, 0.0,
+				0.0, 1.0, 0.0, 1.0,
+				0.0, 1.0, 1.0, 0.0,
+				0.0, 0.0, 0.0, 1.0,
+				0.0, 1.0, 0.0, 1.0,
+				1.0, 0.0, 0.0, 0.0,
 				0.0, 0.44412, 2.203561, 0.548751,
 				-40.0, 1.0, 1.0,
 			]
@@ -3697,32 +3712,32 @@
 					value = 17
 				},
 				{
-					name = "control.Crossfade2/fadeInValue"
+					name = "control.Input5/value"
 					value = 18
 				},
 				{
-					name = "control.Crossfade2/fadeOutValue"
-					value = 27
+					name = "control.Crossfade2/fadeInValue"
+					value = 19
 				},
 				{
-					name = "control.Crossfade3/fadeInValue"
+					name = "control.Crossfade2/fadeOutValue"
 					value = 28
 				},
 				{
-					name = "control.Crossfade3/fadeOutValue"
-					value = 37
+					name = "control.Crossfade3/fadeInValue"
+					value = 29
 				},
 				{
-					name = "control.Input5/value"
+					name = "control.Crossfade3/fadeOutValue"
 					value = 38
 				},
 				{
 					name = "audio.Mix7/volume1"
-					value = 27
+					value = 28
 				},
 				{
 					name = "audio.Mix7/volume2"
-					value = 18
+					value = 19
 				},
 				{
 					name = "control.Input7/value"
@@ -3730,11 +3745,11 @@
 				},
 				{
 					name = "audio.Mix8/volume1"
-					value = 37
+					value = 38
 				},
 				{
 					name = "audio.Mix8/volume2"
-					value = 28
+					value = 29
 				},
 				{
 					name = "control.Input9/value"
