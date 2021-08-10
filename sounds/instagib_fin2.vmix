@@ -314,7 +314,7 @@
 					name = "control.Input2"
 					friendlyname = "303 HiOc Volume"
 					type = "control.Input"
-					editor_pos = [ 448.0, -408.0 ]
+					editor_pos = [ 440.0, -408.0 ]
 					editor_size = [ 140.0, 70.0 ]
 					properties = 
 					{
@@ -471,7 +471,7 @@
 						_class = "CMixControlInput"
 						m_Comment = ""
 						m_name = "303 Delay Mix"
-						m_flDefaultValue = 0.0
+						m_flDefaultValue = 0.75
 						m_flMinRange = 0.0
 						m_flMaxRange = 0.75
 						m_bUseDecibels = false
@@ -1188,7 +1188,7 @@
 						_class = "CMixControlInput"
 						m_Comment = "Probably used to adjust in-game volume"
 						m_name = "Final Volume"
-						m_flDefaultValue = -40.0
+						m_flDefaultValue = -30.0
 						m_flMinRange = -80.0
 						m_flMaxRange = -20.0
 						m_bUseDecibels = true
@@ -1772,16 +1772,16 @@
 				XAxis = 
 				{
 					pos = 0.0
-					min = -25377.0
-					max = 24481.0
-					scale = 0.255161
+					min = -136340.0
+					max = 129375.0
+					scale = 1.334453
 				}
 				YAxis = 
 				{
 					pos = 0.0
-					min = -25173.0
-					max = 25229.0
-					scale = 0.255161
+					min = -133428.0
+					max = 132832.0
+					scale = 1.334453
 				}
 			}
 			m_Submixes = 
@@ -2346,7 +2346,7 @@
 				},
 				{
 					name = "303 Delay Mix"
-					value = 0.0
+					value = 0.75
 				},
 				{
 					name = "Hihats Volume"
@@ -2362,7 +2362,7 @@
 				},
 				{
 					name = "Final Volume"
-					value = -40.0
+					value = -30.0
 				},
 			]
 			m_MixCommands = 
@@ -3714,14 +3714,14 @@
 				0.0, 1.0, 0.0, 1.0,
 				1.0, 0.0, 0.0, 0.0,
 				1.0, 0.0, 0.600828, 1.0,
-				0.0, 0.0, 0.0, 0.0,
+				0.0, 0.0, 0.75, 0.0,
 				0.0, 1.0, 0.0, 1.0,
 				0.0, 1.0, 1.0, 0.0,
 				0.0, 0.0, 0.0, 1.0,
 				0.0, 1.0, 0.0, 1.0,
 				1.0, 0.0, 0.0, 0.0,
 				0.0, 0.44412, 0.794328, 1.0,
-				1.0, 1.0, -40.0, 0.794328,
+				1.0, 1.0, -30.0, 0.794328,
 				5.623413, 1.0, 1.0,
 			]
 			m_controlPoints = 
