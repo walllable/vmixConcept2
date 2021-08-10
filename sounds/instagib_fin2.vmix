@@ -99,7 +99,7 @@
 				0, 0, 0, 0,
 				1, 10, 0, 0,
 				2, 0, 6, 0,
-				0, 14,
+				0, 15,
 			]
 			m_EditorNodes = 
 			[
@@ -147,7 +147,7 @@
 					name = "audio.Output1"
 					friendlyname = "audio.Output1"
 					type = "audio.Output"
-					editor_pos = [ 4072.0, 176.0 ]
+					editor_pos = [ 3544.0, 184.0 ]
 					editor_size = [ 140.0, 120.0 ]
 					properties = 
 					{
@@ -348,7 +348,7 @@
 					name = "audio.Mix6"
 					friendlyname = "Sidechain Bus"
 					type = "audio.Mix"
-					editor_pos = [ 2176.0, -32.0 ]
+					editor_pos = [ 2280.0, -78.0 ]
 					editor_size = [ 140.0, 300.0 ]
 					properties = 
 					{
@@ -423,12 +423,12 @@
 					name = "audio.Dynamics1"
 					friendlyname = "Final Compressor"
 					type = "audio.Dynamics"
-					editor_pos = [ 2360.0, 40.0 ]
+					editor_pos = [ 2464.0, -6.0 ]
 					editor_size = [ 184.0, 135.0 ]
 					properties = 
 					{
 						_class = "CMixDynamics"
-						m_Comment = "Compressor so the kickdrum and bassline co-exist nicely"
+						m_Comment = ""
 						m_name = "Final Compressor"
 						m_nChannels = -1
 						m_fldbNoiseGateThreshold = -90.0
@@ -481,7 +481,7 @@
 					name = "sys.Group1"
 					friendlyname = "TB-303 Bassline!"
 					type = "sys.Group"
-					editor_pos = [ -197.0, -1173.0 ]
+					editor_pos = [ -197.0, -1149.0 ]
 					editor_size = [ 428.0, 160.0 ]
 					properties = 
 					{
@@ -496,7 +496,7 @@
 					name = "audio.Track5"
 					friendlyname = "Drums (Kick Only)"
 					type = "audio.Track"
-					editor_pos = [ -93.0, 747.0 ]
+					editor_pos = [ -69.0, 659.0 ]
 					editor_size = [ 140.0, 75.0 ]
 					properties = 
 					{
@@ -516,7 +516,7 @@
 					name = "audio.Track6"
 					friendlyname = "Drums (Kick+Snare)"
 					type = "audio.Track"
-					editor_pos = [ -93.0, 987.0 ]
+					editor_pos = [ -69.0, 899.0 ]
 					editor_size = [ 140.0, 75.0 ]
 					properties = 
 					{
@@ -536,7 +536,7 @@
 					name = "control.Crossfade2"
 					friendlyname = "control.Crossfade2"
 					type = "control.Crossfade"
-					editor_pos = [ -109.0, 851.0 ]
+					editor_pos = [ -85.0, 763.0 ]
 					editor_size = [ 162.0, 100.0 ]
 					properties = 
 					{
@@ -551,7 +551,7 @@
 					name = "audio.Mix7"
 					friendlyname = "Drums Crossfade Mixer"
 					type = "audio.Mix"
-					editor_pos = [ 149.601562, 744.700562 ]
+					editor_pos = [ 173.601562, 656.700562 ]
 					editor_size = [ 140.0, 300.0 ]
 					properties = 
 					{
@@ -572,7 +572,7 @@
 					name = "control.Input6"
 					friendlyname = "Kick/Kick+Snare"
 					type = "control.Input"
-					editor_pos = [ -277.0, 859.0 ]
+					editor_pos = [ -253.0, 771.0 ]
 					editor_size = [ 140.0, 70.0 ]
 					properties = 
 					{
@@ -589,7 +589,7 @@
 					name = "audio.Amp5"
 					friendlyname = "Drums Volume*"
 					type = "audio.Amp"
-					editor_pos = [ 603.0, 875.0 ]
+					editor_pos = [ 635.0, 779.0 ]
 					editor_size = [ 140.0, 90.0 ]
 					properties = 
 					{
@@ -658,7 +658,7 @@
 					name = "control.Input7"
 					friendlyname = "Kick+Snare Volume"
 					type = "control.Input"
-					editor_pos = [ 427.0, 939.0 ]
+					editor_pos = [ 459.0, 843.0 ]
 					editor_size = [ 140.0, 70.0 ]
 					properties = 
 					{
@@ -744,7 +744,7 @@
 					name = "audio.EQ81"
 					friendlyname = "audio.EQ81"
 					type = "audio.EQ8"
-					editor_pos = [ 949.904419, 230.887329 ]
+					editor_pos = [ 906.904419, 203.887329 ]
 					editor_size = [ 186.0, 120.0 ]
 					properties = 
 					{
@@ -817,7 +817,7 @@
 					name = "audio.EQ82"
 					friendlyname = "audio.EQ82"
 					type = "audio.EQ8"
-					editor_pos = [ 816.0, 888.0 ]
+					editor_pos = [ 912.0, 792.0 ]
 					editor_size = [ 186.0, 120.0 ]
 					properties = 
 					{
@@ -987,7 +987,7 @@
 					name = "audio.Track9"
 					friendlyname = "audio.Track9"
 					type = "audio.Track"
-					editor_pos = [ 448.0, -936.0 ]
+					editor_pos = [ 448.0, -920.0 ]
 					editor_size = [ 140.0, 75.0 ]
 					properties = 
 					{
@@ -1007,7 +1007,7 @@
 					name = "audio.Amp7"
 					friendlyname = "audio.Amp7"
 					type = "audio.Amp"
-					editor_pos = [ 440.0, -856.0 ]
+					editor_pos = [ 448.0, -832.0 ]
 					editor_size = [ 140.0, 90.0 ]
 					properties = 
 					{
@@ -1021,7 +1021,7 @@
 					name = "audio.EQ84"
 					friendlyname = "audio.EQ84"
 					type = "audio.EQ8"
-					editor_pos = [ 640.0, -848.0 ]
+					editor_pos = [ 624.0, -880.0 ]
 					editor_size = [ 186.0, 120.0 ]
 					properties = 
 					{
@@ -1167,7 +1167,7 @@
 					name = "audio.Amp8"
 					friendlyname = "audio.Amp8"
 					type = "audio.Amp"
-					editor_pos = [ 4056.0, 0.0 ]
+					editor_pos = [ 3528.0, 8.0 ]
 					editor_size = [ 140.0, 90.0 ]
 					properties = 
 					{
@@ -1181,7 +1181,7 @@
 					name = "control.Input11"
 					friendlyname = "Final Volume"
 					type = "control.Input"
-					editor_pos = [ 3680.0, 8.0 ]
+					editor_pos = [ 3152.0, 16.0 ]
 					editor_size = [ 140.0, 70.0 ]
 					properties = 
 					{
@@ -1198,7 +1198,7 @@
 					name = "control.Curve1"
 					friendlyname = "control.Curve1"
 					type = "control.Curve"
-					editor_pos = [ 3880.0, 0.0 ]
+					editor_pos = [ 3352.0, 8.0 ]
 					editor_size = [ 140.0, 85.0 ]
 					properties = 
 					{
@@ -1261,12 +1261,12 @@
 					name = "sys.Group3"
 					friendlyname = "(Unused) 303 Noise"
 					type = "sys.Group"
-					editor_pos = [ 416.0, -1032.0 ]
-					editor_size = [ 424.0, 320.0 ]
+					editor_pos = [ 408.0, -1064.0 ]
+					editor_size = [ 424.0, 336.0 ]
 					properties = 
 					{
 						_class = "CMixGroupBox"
-						m_Comment = "Added this while experimenting. Didn\'t quite like how it sounded, but kept it around, just in case. I guess."
+						m_Comment = "Added this while experimenting. Didn\'t quite like how it sounded, but kept it around, just in case. I guess. Especially redundant since the 16-bit bit-depth on the 303 already adds noise when distorted."
 						m_name = "(Unused) 303 Noise"
 						m_color = [ 40, 40, 70, 100 ]
 						m_bMovesNodes = true
@@ -1306,7 +1306,7 @@
 					name = "sys.Group6"
 					friendlyname = "Drums Crossfade"
 					type = "sys.Group"
-					editor_pos = [ -301.0, 659.0 ]
+					editor_pos = [ -277.0, 571.0 ]
 					editor_size = [ 624.0, 432.0 ]
 					properties = 
 					{
@@ -1321,7 +1321,7 @@
 					name = "sys.Group7"
 					friendlyname = "Beat Volume"
 					type = "sys.Group"
-					editor_pos = [ 403.0, 795.0 ]
+					editor_pos = [ 435.0, 699.0 ]
 					editor_size = [ 368.0, 232.0 ]
 					properties = 
 					{
@@ -1336,7 +1336,7 @@
 					name = "sys.Group8"
 					friendlyname = "Drums EQ"
 					type = "sys.Group"
-					editor_pos = [ 800.0, 792.0 ]
+					editor_pos = [ 896.0, 696.0 ]
 					editor_size = [ 216.0, 236.0 ]
 					properties = 
 					{
@@ -1381,7 +1381,7 @@
 					name = "sys.Group11"
 					friendlyname = "Hi-Hats EQ"
 					type = "sys.Group"
-					editor_pos = [ 931.0, 131.0 ]
+					editor_pos = [ 888.0, 104.0 ]
 					editor_size = [ 224.0, 240.0 ]
 					properties = 
 					{
@@ -1396,8 +1396,8 @@
 					name = "sys.Group12"
 					friendlyname = "Master Output"
 					type = "sys.Group"
-					editor_pos = [ 2691.0, -253.0 ]
-					editor_size = [ 1560.0, 584.0 ]
+					editor_pos = [ 2696.0, -248.0 ]
+					editor_size = [ 1024.0, 584.0 ]
 					properties = 
 					{
 						_class = "CMixGroupBox"
@@ -1411,7 +1411,7 @@
 					name = "sys.Group13"
 					friendlyname = "Final Mixer"
 					type = "sys.Group"
-					editor_pos = [ 2707.0, -125.0 ]
+					editor_pos = [ 2712.0, -144.0 ]
 					editor_size = [ 392.0, 432.0 ]
 					properties = 
 					{
@@ -1426,7 +1426,7 @@
 					name = "sys.Group14"
 					friendlyname = "Final Volume and Curve"
 					type = "sys.Group"
-					editor_pos = [ 3664.0, -160.0 ]
+					editor_pos = [ 3136.0, -152.0 ]
 					editor_size = [ 568.0, 260.0 ]
 					properties = 
 					{
@@ -1435,79 +1435,6 @@
 						m_name = "Final Volume and Curve"
 						m_color = [ 40, 40, 70, 100 ]
 						m_bMovesNodes = true
-					}
-				},
-				{
-					name = "audio.EQ86"
-					friendlyname = "audio.EQ86"
-					type = "audio.EQ8"
-					editor_pos = [ 3408.0, 136.0 ]
-					editor_size = [ 186.0, 120.0 ]
-					properties = 
-					{
-						_class = "CMixEQ8"
-						m_Comment = ""
-						m_name = "audio.EQ86"
-						m_nChannels = -1
-						m_stages = 
-						[
-							{
-								m_filterType = "FILTER_LOW_SHELF"
-								m_flFrequency = 80.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = true
-							},
-							{
-								m_filterType = "FILTER_PEAKING_EQ"
-								m_flFrequency = 500.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = true
-							},
-							{
-								m_filterType = "FILTER_PEAKING_EQ"
-								m_flFrequency = 750.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = false
-							},
-							{
-								m_filterType = "FILTER_PEAKING_EQ"
-								m_flFrequency = 1200.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = true
-							},
-							{
-								m_filterType = "FILTER_PEAKING_EQ"
-								m_flFrequency = 2000.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = false
-							},
-							{
-								m_filterType = "FILTER_PEAKING_EQ"
-								m_flFrequency = 3000.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = true
-							},
-							{
-								m_filterType = "FILTER_PEAKING_EQ"
-								m_flFrequency = 5000.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = false
-							},
-							{
-								m_filterType = "FILTER_HIGH_SHELF"
-								m_flFrequency = 12000.0
-								m_flQ = 3.0
-								m_fldbGain = 0.0
-								m_bEnable = true
-							},
-						]
 					}
 				},
 				{
@@ -1536,15 +1463,15 @@
 				},
 				{
 					name = "audio.Splitter1"
-					friendlyname = "audio.Splitter1"
+					friendlyname = "Beat Splitter"
 					type = "audio.Splitter"
-					editor_pos = [ 2184.0, 288.0 ]
+					editor_pos = [ 2288.0, 242.0 ]
 					editor_size = [ 140.0, 105.0 ]
 					properties = 
 					{
 						_class = "CMixSplitter"
 						m_Comment = ""
-						m_name = "audio.Splitter1"
+						m_name = "Beat Splitter"
 						m_flVolume1 = 1.0
 						m_flVolume2 = 1.0
 					}
@@ -1553,7 +1480,7 @@
 					name = "audio.Mix10"
 					friendlyname = "Final Mixer"
 					type = "audio.Mix"
-					editor_pos = [ 2832.0, -8.0 ]
+					editor_pos = [ 2837.0, -27.0 ]
 					editor_size = [ 140.0, 300.0 ]
 					properties = 
 					{
@@ -1572,15 +1499,15 @@
 				},
 				{
 					name = "audio.Amp10"
-					friendlyname = "Beat Post-Sidechain"
+					friendlyname = "Beat Post-Sidechain Volume"
 					type = "audio.Amp"
-					editor_pos = [ 2536.0, 232.0 ]
+					editor_pos = [ 2488.0, 146.0 ]
 					editor_size = [ 140.0, 90.0 ]
 					properties = 
 					{
 						_class = "CMixAmp"
 						m_Comment = ""
-						m_name = "Beat Post-Sidechain"
+						m_name = "Beat Post-Sidechain Volume"
 						m_flVolume = 1.0
 					}
 				},
@@ -1588,7 +1515,7 @@
 					name = "control.Input12"
 					friendlyname = "BeatVol Post-SC"
 					type = "control.Input"
-					editor_pos = [ 2368.0, 192.0 ]
+					editor_pos = [ 2488.0, 258.0 ]
 					editor_size = [ 140.0, 70.0 ]
 					properties = 
 					{
@@ -1602,21 +1529,18 @@
 					}
 				},
 				{
-					name = "audio.Filter2"
-					friendlyname = "audio.Filter2"
-					type = "audio.Filter"
-					editor_pos = [ 3824.0, 184.0 ]
-					editor_size = [ 140.0, 135.0 ]
+					name = "sys.Group15"
+					friendlyname = "Sidechain Compression"
+					type = "sys.Group"
+					editor_pos = [ 2272.0, -248.0 ]
+					editor_size = [ 384.0, 608.0 ]
 					properties = 
 					{
-						_class = "CMixFilter"
-						m_Comment = ""
-						m_name = "audio.Filter2"
-						m_filterType = "FILTER_LOWPASS"
-						m_nChannels = -1
-						m_flFrequency = 125.45903
-						m_flQ = 0.81
-						m_fldbGain = 0.0
+						_class = "CMixGroupBox"
+						m_Comment = "This makes the instruments \"pump.\" I chose sidechain compression to have more control over the final volume of the drums and instruments, as well as to let the programmer mute the drums, while still having that \"pumping\" effect on instruments."
+						m_name = "Sidechain Compression"
+						m_color = [ 40, 40, 70, 100 ]
+						m_bMovesNodes = true
 					}
 				},
 			]
@@ -1840,10 +1764,6 @@
 				},
 				{
 					plug0 = "audio.Amp8/audio:Out"
-					plug1 = "audio.Filter2/audio:In"
-				},
-				{
-					plug0 = "audio.Filter2/audio:Out"
 					plug1 = "audio.Output1/audio:In1"
 				},
 			]
@@ -1852,16 +1772,16 @@
 				XAxis = 
 				{
 					pos = 0.0
-					min = -40657.0
-					max = 39259.0
-					scale = 0.405454
+					min = -25377.0
+					max = 24481.0
+					scale = 0.255161
 				}
 				YAxis = 
 				{
 					pos = 0.0
-					min = -40441.0
-					max = 40049.0
-					scale = 0.405454
+					min = -25173.0
+					max = 25229.0
+					scale = 0.255161
 				}
 			}
 			m_Submixes = 
@@ -1930,7 +1850,7 @@
 					mixDownRule = 0
 				},
 				{
-					name = "audio.Splitter1"
+					name = "Beat Splitter"
 					sendOperator = "SendNone"
 					soloname = 1795754272
 					channels = -1
@@ -2395,22 +2315,6 @@
 						m_flAttackTimeMS = 56.688354
 						m_flReleaseTimeMS = 302.207764
 						m_flRMSTimeMS = 172.727234
-					}
-				},
-				{
-					m_name = "audio.Filter2"
-					m_effectName = ""
-					m_nProcessorType = "VPROCESSOR_FILTER"
-					m_bAffectsGlobals = false
-					m_nChannels = -1
-					m_flxfade = 0.1
-					m_params = 
-					{
-						m_nFilterType = "FILTER_LOWPASS"
-						m_bEnabled = true
-						m_fldbGain = 0.0
-						m_flCutoffFreq = 125.45903
-						m_flQ = 0.81
 					}
 				},
 			]
@@ -3784,46 +3688,6 @@
 					inputValue1 = -1
 				},
 				{
-					command = "submix.spectrum"
-					paramName = -1880712976
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
-					command = "submix.process"
-					paramName = -1537370828
-					outputSubmix = 1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = 11
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
-					command = "submix.debug"
-					paramName = 1343468597
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
-					command = "submix.spectrum"
-					paramName = 1343468597
-					outputSubmix = -1
-					inputSubmix0 = 1
-					inputSubmix1 = -1
-					processor = -1
-					inputValue0 = -1
-					inputValue1 = -1
-				},
-				{
 					command = "submix.output"
 					paramName = 0
 					outputSubmix = -1
@@ -3932,10 +3796,10 @@
 					name = "Sidechain Bus"
 				},
 				{
-					name = "audio.Splitter1"
+					name = "Beat Splitter"
 				},
 				{
-					name = "Beat Post-Sidechain"
+					name = "Beat Post-Sidechain Volume"
 				},
 				{
 					name = "Final Mixer"
